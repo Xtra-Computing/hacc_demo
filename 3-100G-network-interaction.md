@@ -4,7 +4,7 @@
 This demo shows the ability of using CPU's 100G network card to communicate with FPGAs on HACC@NUS
 
 
-In __hacchead__, the subnet 192.168.0.xxx is the 100G network, the CPU node ip is 192.168.0.2
+In __hacchead__, the subnet 192.168.0.xxx is in the 100G network connection, the CPU node ip is 192.168.0.2
 
 ```
 # first, setup xrt environment
