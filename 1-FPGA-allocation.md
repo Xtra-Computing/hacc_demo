@@ -1,4 +1,4 @@
-## Demo 1
+## Demo 1:  FPGA Allocation
 
 This demo gives a brief introduction on different ways of allocating FPGA boards in HACC@NUS.
 
