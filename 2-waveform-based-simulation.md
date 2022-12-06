@@ -32,7 +32,8 @@ cd cpp_kernels/burst_rw/
 
 
 # 3. make 
-source ../../../env/vitis.sh
+source /opt/xilinx/xrt/setup.sh
+source /opt/Xilinx/Vitis/2020.2/settings64.sh
 make TARGET=hw_emu DEVICE=xilinx_u250_gen3x16_xdma_3_1_202020_1 all -j 
 
 # 4. setup emu env, you can directly use the provided xrt.ini in env
@@ -40,6 +41,7 @@ cp ../../../env/xrt.ini .
 
 # 5. run emulation
 source /opt/xilinx/xrt/setup.sh
+source /opt/Xilinx/Vitis/2020.2/settings64.sh
 XCL_EMULATION_MODE=hw_emu ./burst_rw build_dir.hw_emu.xilinx_u250_gen3x16_xdma_3_1_202020_1/vadd.xclbin
 
 ```
