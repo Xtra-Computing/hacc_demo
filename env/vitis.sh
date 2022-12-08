@@ -1,4 +1,13 @@
-#!/bin/bash
+#/usr/bin/env bash
+
+_hacclogin_completions()
+{
+  list=$(sinfo  | grep -v PARTITION   | grep -v \* | awk '{print $1 }')
+  COMPREPLY=($(compgen -W "${list}" "${COMP_WORDS[1]}"))
+}
+
+complete -F _hacclogin_completions hacclogin
+
 
 if [ $# -lt 1 ];
 then
