@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ $# -lt 1 ];
+then
+    echo "usage: vck5000_alloc [board_id(1,4)]"
+    echo "example: vck5000_alloc 1"
+    echo "please see the available vck5000 boards by running sinfo"
+    exit -1
+fi
+
+
+if [ "$(hostname)" = "hacchead" ]; then
+    srun -p vck5000_standard_reservation_pool -w hacc-vck5000-$1 --pty  bash -i
+
+else
+    echo "ERROR: this script can only be run from hacchead node!"
+fi

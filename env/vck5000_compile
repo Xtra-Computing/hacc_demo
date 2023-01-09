@@ -1,0 +1,3 @@
+#!/bin/bash
+
+srun -p vck5000_compile  --hint=multithread --pty  bash -i
