@@ -1,0 +1,14 @@
+#!/bin/bash
+
+hn=$(hostname)
+
+tag=${hn:0:12}
+
+if [ "${tag}" = "hacc-vck5000" ]; then
+    echo "node rebooting for the re-initialization of AIE, please ignore the error message"
+    sudo reboot
+
+else
+    echo "ERROR: this script can only be run from hacc-vck5000-x node!"
+fi
+
