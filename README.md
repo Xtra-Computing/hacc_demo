@@ -1,10 +1,13 @@
 ## HACC Demo
 
-This repo provides some useful scripts and examples to set up environment variables and utlize resources in HACC@NUS cluster.
+This repo provides some useful tool scripts and examples to demonstrate how to use the available FPGA resources in HACC@NUS cluster.
 
 
 HACC@NUS cluster adopts [Slurm](https://slurm.schedmd.com/documentation.html) job scheduler to manage hardware resource. 
-In order to run an __FPGA accelerated__ task, you must submit a slurm job request to the scheduler, by requesting how much time you want, what type of resources you require. The details of how to write a slurm job are shown in the following part.  [Here](doc/slurm.pdf) is a command cheat sheet for using Slurm [[1]](https://xilinx-center.csl.illinois.edu/xacc-cluster/xacc-user-guide/xacc-job-submission-and-scheduling/)
+In order to run an __FPGA accelerated__ task, you must submit a slurm job request to the scheduler, by requesting how much time you want, what type of resources you require. [Here](doc/slurm.pdf) is a command cheat sheet for using Slurm [[1]](https://xilinx-center.csl.illinois.edu/xacc-cluster/xacc-user-guide/xacc-job-submission-and-scheduling/). 
+
+
+The following part gives a quick hand-on of using Slurm to access HACC@NUS's hardware resources.
 
 
 To see the available FPGA resources, you can run ```sinfo``` after logining our cluster.
