@@ -10,7 +10,7 @@ fi
 
 
 if [ "$(hostname)" = "hacchead" ]; then
-    srun -p vck5000_standard_reservation_pool -w hacc-vck5000-$1 --pty  bash -i
+    srun -p vck5000_qdma -w hacc-vck5000-$1 --pty  bash -i
 
 else
     echo "ERROR: this script can only be run from hacchead node!"

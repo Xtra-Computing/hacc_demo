@@ -36,3 +36,4 @@ There are several simple demo of how to use resouces provided HACC@NUS:
 - [Demo 2: Use VNC for waveform-based simulation](doc/2-waveform-based-simulation.md)
 - [Demo 3: 100G networking](doc/3-100G-network-interaction.md)
 - [Demo 4: VCK5000 exploration](doc/4-VCK5000.md)
+- [Demo 5: U250 DFX-2RP](doc/5-U250_DFX.md)

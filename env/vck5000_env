@@ -11,7 +11,7 @@ complete -F _hacclogin_completions hacclogin
 
 if [ $# -lt 1 ];
 then
-    version=22.1
+    version=22.2
     echo "defalut: ${version}"
 else
     version=$1
