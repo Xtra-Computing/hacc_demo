@@ -6,7 +6,6 @@ This demo gives a brief introduction on different ways of allocating FPGA boards
 
 HACC@NUS provide three reservation pool with different reservation time.
 
-- Short reservation pool  (30 minutes)
 - Standard reservation pool (12 hours)
 - Long reservation pool (2 days)
 
