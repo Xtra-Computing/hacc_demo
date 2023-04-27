@@ -20,7 +20,7 @@ srun -p u250_standard_reservation_pool  -n 1 --pty bash –i
 or you can just use the provide script tool:
 
 ```
-./env/login u250_standard_reservation_pool 
+./env/hacclogin u250_standard_reservation_pool 
 ```
 
 
