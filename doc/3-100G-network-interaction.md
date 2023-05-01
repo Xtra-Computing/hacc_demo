@@ -13,7 +13,7 @@ source /opt/xilinx/xrt/setup.sh
 srun -p u250_2  fpga_network/fpga_network_config  fpga_network/vnx_basic_if1.xclbin
 ```
 
-After the configuration, we can ping the FPGA node:
+After the configuration, you can ping the FPGA node:
 ```
 ping -c 5 192.168.0.201 
 ```

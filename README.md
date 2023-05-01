@@ -7,9 +7,11 @@ HACC@NUS cluster adopts [Slurm](https://slurm.schedmd.com/documentation.html) jo
 In order to run an __FPGA accelerated__ task, you must submit a slurm job request to the scheduler, by requesting how much time you want, what type of resources you require. [Here](doc/slurm.pdf) is a command cheat sheet for using Slurm [[1]](https://xilinx-center.csl.illinois.edu/xacc-cluster/xacc-user-guide/xacc-job-submission-and-scheduling/). 
 
 
+
+<img src="doc/hacc.png" alt="" width="750">
+
+
 The following part gives a quick hand-on of using Slurm to access HACC@NUS's hardware resources.
-
-
 To see the available FPGA resources, you can run ```sinfo``` after logining our cluster.
 
 ```
@@ -37,3 +39,4 @@ There are several simple demo of how to use resouces provided HACC@NUS:
 - [Demo 3: 100G networking](doc/3-100G-network-interaction.md)
 - [Demo 4: VCK5000 exploration](doc/4-VCK5000.md)
 - [Demo 5: U250 DFX-2RP](doc/5-U250_DFX.md)
+
