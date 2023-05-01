@@ -42,8 +42,10 @@ The hardware compilation environment and hardware shell version for different ha
 | U50 Single Node |  U50   | xilinx_u50_gen3x16_xdma_201920_3  | 2.14.354    | Vitis 2021.2 |
 
 
-We provide a unified environment setup script located in ```/home/hacc_env```. You can use it by simply running the script or add it to your ```bashrc```. 
-
+We provide a unified environment setup script located in ```/home/hacc_env```. You can use it by simply running the script or add it to your ```.bashrc```. 
+```bash
+source  /home/hacc_env
+```
 
 
 The path of deployed toolchains are list as follows.

@@ -1,10 +1,12 @@
 ## Demo 1:  FPGA Allocation
 
-HACC@NUS adopts Slurm to manage the hardware and schedule jobs from different users.
+
+HACC@NUS cluster adopts [Slurm](https://slurm.schedmd.com/documentation.html) job scheduler to manage hardware resource. 
+In order to run an __FPGA accelerated__ task, you must submit a slurm job request to the scheduler, by requesting how much time you want, what type of resources you require. We suggest the user to learn basic knowledge of Slurm, and [here](doc/slurm.pdf) is a command cheat sheet for using Slurm.
+
+
+
 This demo gives a brief introduction on different ways of allocating FPGA boards in HACC@NUS using Slurm. 
-
-
-We suggest the user to learn basic knowledge of Slurm. A cheat sheet of Slurm command can be found in [here](doc/slurm.pdf)
 
 
 
