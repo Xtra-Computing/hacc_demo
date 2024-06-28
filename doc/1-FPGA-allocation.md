@@ -2,7 +2,7 @@
 
 
 HACC@NUS cluster adopts [Slurm](https://slurm.schedmd.com/documentation.html) job scheduler to manage hardware resource. 
-In order to run an __FPGA accelerated__ task, you must submit a slurm job request to the scheduler, by requesting how much time you want, what type of resources you require. We suggest the user to learn basic knowledge of Slurm, and [here](doc/slurm.pdf) is a command cheat sheet for using Slurm.
+In order to run an __FPGA accelerated__ task, you must submit a slurm job request to the scheduler, by requesting how much time you want, what type of resources you require. We suggest the user to learn basic knowledge of Slurm, and [here](https://github.com/Xtra-Computing/hacc_demo/tree/main/doc/slurm.pdf) is a command cheat sheet for using Slurm.
 
 
 
