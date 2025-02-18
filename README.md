@@ -18,7 +18,7 @@ This repo provides some useful tool scripts and examples to demonstrate how to u
 
 ## Hardware Overview
 
-<img src="doc/hacc.png" alt="" width="750">
+<img src="doc/xacc_nus.PNG" alt="" width="750">
 
 
 
