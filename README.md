@@ -18,19 +18,35 @@ This repo provides some useful tool scripts and examples to demonstrate how to u
 
 ## Hardware Overview
 
-<img src="doc/hacc.png" alt="" width="750">
+<img src="doc/xacc_nus.PNG" alt="" width="750">
 
 
 
 ## Software Environment
 
 The hardware compilation environment and hardware shell version for different hardware are shown in the table below. 
+| Cluster Name | Node Name | Hardware Setup    | Shell/Arch Version                         | XRT Version | Toolchain Version |
+|-------------------|-------------------|--------------------------------------------|-------------|-------------------|-------------------|
+| VCK5000 Cluster | hacc-node1, hacc-gpu3 | VCK5000 x3 | xilinx_vck5000_gen4x8_qdma_2_202220_1 | 2.14.384   | Vitis 2022.2       |
+| U55C Cluster | hacc-gpu1,2,3 | U55C x6 | xilinx_u55c_gen3x16_xdma_3_202210_1 | 2.14.384   | Vitis 2022.2       |
+| U250 Cluster | hacc-node0,3 | Alveo U250 x6 | xilinx_u250_gen3x16_xdma_3_1_202020_1 | 2.14.354   | Vitis 2021.2       |
+| U280 Cluster | hacc-node0,2, hacc-gpu1 | Alveo U280 x4 | xilinx_u280_xdma_201920_3 | 2.14.354   | Vitis 2021.2       |
+| U50 Cluster  | hacc-node0 | Alveo U50 x1 | xilinx_u50_gen3x16_xdma_201920_3      | 2.14.354   | Vitis 2021.2       |
+| MI25 Cluster  | hacc-gpu0 | MI25 x8    | gfx906                                 | -           | ROCm-5.4.2         |
+| MI100 Cluster | hacc-gpu1 | MI100 x4  | gfx908                                 | -           | ROCm-5.4.2         |
+| MI100 Cluster | hacc-gpu4 | MI100 x4  | gfx908                                 | -           | ROCm-6.3.2         |
+| MI100 Cluster | hacc-gpu5 | MI100 x4  | gfx908                                 | -           | ROCm-6.0.0         |
+| MI210 Cluster | hacc-gpu2,3 | MI210 x4  | gfx90a                                 | -           | ROCm-6.0.0         |
+| MI210 Cluster | hacc-gpu4 | MI210 x4  | gfx90a                                 | -           | ROCm-6.3.2         |
 
 
-|Cluster|  Hardware | Shell/Arch Version | XRT Version | Toolchain Version|
+<!-- |Node Name |  Hardware | Shell/Arch Version | XRT Version | Toolchain Version|
 |-------------------|----------------|--------------------|-------------|-------------------|
-| Heterogeneous Cluster |VCK5000 | xilinx_vck5000_gen4x8_qdma_2_202220_1 | 2.14.384  | Vitis 2022.2 |
-|                  | U55C   | xilinx_u55c_gen3x16_xdma_3_202210_1 | 2.14.384   | Vitis 2022.2 |
+| hacc-gpu2 |VCK5000 | xilinx_vck5000_gen4x8_qdma_2_202220_1 | 2.14.384  | Vitis 2022.2 |
+| hacc-gpu3 |VCK5000 | xilinx_vck5000_gen4x8_qdma_2_202220_1 | 2.14.384  | Vitis 2022.2 |
+| hacc-gpu1 | U55C   | xilinx_u55c_gen3x16_xdma_3_202210_1 | 2.14.384   | Vitis 2022.2 |
+| hacc-gpu2 | U55C   | xilinx_u55c_gen3x16_xdma_3_202210_1 | 2.14.384   | Vitis 2022.2 |
+| hacc-gpu3 | U55C   | xilinx_u55c_gen3x16_xdma_3_202210_1 | 2.14.384   | Vitis 2022.2 |
 |                  | U250 | xilinx_u250_gen3x16_xdma_4_1_202210_1 | 2.14.384   | Vitis 2022.2 |
 |                  |MI210 | gfx90a  | -   | ROCm-5.4.2 |
 | GPU Cluster | MI25    | gfx906  | -  | ROCm-5.4.2 |
@@ -38,13 +54,13 @@ The hardware compilation environment and hardware shell version for different ha
 | U250 Cluster  |  U250     | xilinx_u250_gen3x16_xdma_3_1_202020_1  | 2.14.354   | Vitis 2021.2 |
 | U280 Cluster |  U280    | xilinx_u280_xdma_201920_3  | 2.14.354    | Vitis 2021.2 |
 | VCK5000 Cluster  | VCK5000     | xilinx_vck5000_gen4x8_qdma_2_202220_1     |2.14.384   | Vitis 2022.2 |
-| U50 Single Node |  U50   | xilinx_u50_gen3x16_xdma_201920_3  | 2.14.354    | Vitis 2021.2 |
+| U50 Single Node |  U50   | xilinx_u50_gen3x16_xdma_201920_3  | 2.14.354    | Vitis 2021.2 | -->
 
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2023 Xtra Computing Group, NUS, Singapore.
+Copyright (c) 2025 Xtra Computing Group, NUS, Singapore.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
