@@ -19,7 +19,7 @@ This repo provides some useful tool scripts and examples to demonstrate how to u
 
 ## Hardware Overview
 
-<img src="doc/xacc_nus.PNG" alt="" width="750">
+<img src="doc/hacc.png" alt="" width="750">
 
 
 
@@ -33,8 +33,6 @@ The hardware compilation environment and hardware shell version for different ha
 | U250 Cluster | hacc-node0,3 | Alveo U250 x6 | xilinx_u250_gen3x16_xdma_3_1_202020_1 | 2.14.354   | Vitis 2021.2       |
 | U280 Cluster | hacc-node0,2, hacc-gpu1 | Alveo U280 x4 | xilinx_u280_xdma_201920_3 | 2.14.354   | Vitis 2021.2       |
 | U50 Cluster  | hacc-node0 | Alveo U50 x1 | xilinx_u50_gen3x16_xdma_201920_3      | 2.14.354   | Vitis 2021.2       |
-| MI25 Cluster  | hacc-gpu0 | MI25 x8    | gfx906                                 | -           | ROCm-5.4.2         |
-| MI100 Cluster | hacc-gpu1 | MI100 x4  | gfx908                                 | -           | ROCm-5.4.2         |
 | MI100 Cluster | hacc-gpu4 | MI100 x4  | gfx908                                 | -           | ROCm-6.3.2         |
 | MI100 Cluster | hacc-gpu5 | MI100 x4  | gfx908                                 | -           | ROCm-6.3.2         |
 | MI210 Cluster | hacc-gpu2,3 | MI210 x4  | gfx90a                                 | 2.18.179         | ROCm-6.3.2         |
