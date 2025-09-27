@@ -2,6 +2,21 @@
 
 ## 1. Inspect The hardware with `hdev`
 
+Set the environmental variables:
+
+```bash
+export HDEV_HOME=/opt/hdev
+export PATH="$HDEV_HOME/cli:$PATH"
+```
+
+Set up the Vitis compilation environment:
+
+```bash
+source /tools/Xilinx/Vitis/2022.1/settings64.sh
+```
+
+> **Note:** According to the official documentation, only Vivado 2022.1 and 2024.1 are verified for Coyote development.
+
 Run:
 ```bash
 hdev examine
@@ -120,7 +135,40 @@ cmake ../
 make
 ./bin/test
 ```
-You should see your “Hello, Coyote!” message.
+
+### Expected Output
+
+The test application will display performance metrics for different transfer sizes:
+
+```
+-- CLI PARAMETERS:
+-----------------------------------------------
+Enable hugepages: 1
+Enable mapped pages: 1
+Data stream: HOST
+Number of test runs: 50
+Starting transfer size: 64
+Ending transfer size: 4194304
+
+-- PERF LOCAL
+-----------------------------------------------
+Size:       64; Average throughput:  54.7479 MB/s; Average latency:   4.8619 us
+Size:      128; Average throughput:  98.6305 MB/s; Average latency:  4.88888 us
+Size:      256; Average throughput:  173.358 MB/s; Average latency:  4.94358 us
+Size:      512; Average throughput:  375.083 MB/s; Average latency:  5.18544 us
+Size:     1024; Average throughput:  616.692 MB/s; Average latency:  5.57946 us
+Size:     2048; Average throughput:  932.825 MB/s; Average latency:  6.33078 us
+Size:     4096; Average throughput:  1243.64 MB/s; Average latency:    7.871 us
+Size:     8192; Average throughput:   1454.1 MB/s; Average latency:  9.97716 us
+Size:    16384; Average throughput:  7177.85 MB/s; Average latency:  5.68054 us
+Size:    32768; Average throughput:  8199.79 MB/s; Average latency:  7.07276 us
+Size:    65536; Average throughput:  8859.92 MB/s; Average latency:  10.3128 us
+Size:   131072; Average throughput:  9209.16 MB/s; Average latency:  16.5847 us
+Size:   262144; Average throughput:  9489.59 MB/s; Average latency:  29.3498 us
+Size:   524288; Average throughput:  9482.43 MB/s; Average latency:  54.8689 us
+Size:  1048576; Average throughput:  9495.23 MB/s; Average latency:  105.639 us
+Size:  2097152; Average throughput:  9544.15 MB/s; Average latency:  208.099 us
+Size:  4194304; Average throughput:   9485.2 MB/s; Average latency:  443.432 us
 
 ⸻
 
